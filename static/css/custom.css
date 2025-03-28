@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #6a1b9a;  /* Changed from blue to purple */
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+}
+
+/* Custom classes for purple styling */
+.text-purple {
+    color: var(--primary-color) !important;
+}
+
+.bg-purple {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    padding-top: 76px; /* Account for fixed navbar */
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--secondary-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero section */
+.hero-section {
+    background-color: var(--light-bg);
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* Table styling */
+.table-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    color: var(--primary-color);
+    border-top: none;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 27, 154, 0.3);  /* Updated shadow color to match purple */
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--light-bg);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}

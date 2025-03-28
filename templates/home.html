@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>Welkom bij de Titanenstrijd 2025</h1>
+                <p class="lead mb-4">description</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Registreer voor activiteiten</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timetable Section -->
+<section class="timetable-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Event Timetable</h2>
+        
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-purple text-white">
+                <h3 class="h5 mb-0">Day 1 - March 15, 2025</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00 - 10:00</td>
+                                <td>Opening Ceremony</td>
+                                <td>Main Hall</td>
+                            </tr>
+                            <tr>
+                                <td>10:15 - 11:45</td>
+                                <td>First Round Competitions</td>
+                                <td>Various Locations</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 - 13:00</td>
+                                <td>Lunch Break</td>
+                                <td>Cafeteria</td>
+                            </tr>
+                            <tr>
+                                <td>13:15 - 15:00</td>
+                                <td>Second Round Competitions</td>
+                                <td>Various Locations</td>
+                            </tr>
+                            <tr>
+                                <td>15:15 - 16:30</td>
+                                <td>Team Activities</td>
+                                <td>Sports Field</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card shadow-sm">
+            <div class="card-header bg-purple text-white">
+                <h3 class="h5 mb-0">Day 2 - March 16, 2025</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:30 - 11:00</td>
+                                <td>Semi-Finals</td>
+                                <td>Main Hall</td>
+                            </tr>
+                            <tr>
+                                <td>11:15 - 12:15</td>
+                                <td>Guest Speaker</td>
+                                <td>Auditorium</td>
+                            </tr>
+                            <tr>
+                                <td>12:30 - 13:30</td>
+                                <td>Lunch Break</td>
+                                <td>Cafeteria</td>
+                            </tr>
+                            <tr>
+                                <td>13:45 - 15:15</td>
+                                <td>Final Competitions</td>
+                                <td>Main Hall</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:30</td>
+                                <td>Awards Ceremony</td>
+                                <td>Auditorium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

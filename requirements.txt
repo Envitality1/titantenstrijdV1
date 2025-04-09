@@ -1,8 +1,7 @@
-email-validator
-flask-login
 flask
+flask-login
 flask-sqlalchemy
+sqlalchemy
 gunicorn
 psycopg2-binary
-sqlalchemy
-tomli
+email-validator

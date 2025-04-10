@@ -20,6 +20,11 @@ def register():
     """Registration route - shows registration form"""
     return render_template('register.html')
 
+@app.route('/time')
+def time():
+    """Tijdschema route - toont het volledige programma"""
+    return render_template('time.html')
+
 # Error handlers
 @app.errorhandler(404)
 def not_found_error(error):

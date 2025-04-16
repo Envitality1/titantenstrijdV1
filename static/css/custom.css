@@ -130,11 +130,3 @@ body {
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(106, 27, 154, 0.2);
 }
-
-.highlight-box {
-    border: 9px solid var(--primary-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}

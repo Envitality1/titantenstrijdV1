@@ -2,35 +2,54 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="hero-section py-5 text-center">
+<section class="hero-section">
     <div class="container">
-        <h1 class="display-4 mb-3">Welkom bij de Titanenstrijd 2025</h1>
-        <p class="lead mb-4">Een sportieve driedaagse uitdaging waar teams strijden om de titel van beste klas van het jaar!</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Registreer nu</a>
-            <a href="{{ url_for('time') }}" class="btn btn-outline-secondary btn-lg">Bekijk tijdschema</a>
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>Welkom bij de Titanenstrijd 2025</h1>
+                <p class="lead mb-4">Een driedaags evenement vol sport, strategie en spektakel!</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Registreer voor activiteiten</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Highlights Section -->
-<section class="highlights-section py-5 bg-light">
+<section class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Jouw Klas in Actie!</h2>
-        <div class="row text-center">
-            <div class="col-md-4 mb-4">
-                <img src="{{ url_for('static', filename='images/activities.jpg') }}" class="img-fluid rounded shadow-sm mb-3" alt="Activiteiten">
-                <h4>15+ Activiteiten</h4>
-                <p>Van sport tot spel, voor elk wat wils!</p>
+        <h2 class="text-center mb-5">Jouw klas in actie!</h2>
+
+        <!-- Highlight 1: Image left, text right -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/activities.jpg') }}" class="image-bordered" alt="Highlight 1">
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="{{ url_for('static', filename='images/teamwork.jpg') }}" class="img-fluid rounded shadow-sm mb-3" alt="Samenwerking">
-                <h4>3 Volle Dagen</h4>
-                <p>Een weekend vol actie en plezier met je klas of team!</p>
+            <div class="col-md-6">
+                <h3>15+ Activiteiten</h3>
+                <p>Van sport tot spel, voor ieder wat wils!</p>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="{{ url_for('static', filename='images/location.jpeg') }}" class="img-fluid rounded shadow-sm mb-3" alt="Locatie">
-                <h4>Unieke Locatie</h4>
+        </div>
+
+        <!-- Highlight 2: Text left, image right -->
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/teamwork.jpg') }}" class="image-bordered" alt="Highlight 2">
+            </div>
+            <div class="col-md-6">
+                <h3>3 volle dagen</h3>
+                <p>Een weekend vol actie en pleziermet je klas of team!</p>
+            </div>
+        </div>
+
+        <!-- Highlight 3: Image left, text right -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/location.jpeg') }}" class="image-bordered" alt="Highlight 3">
+            </div>
+            <div class="col-md-6">
+                <h3>Unieke locatie</h3>
                 <p>Unieke locaties voor elke activiteit!</p>
             </div>
         </div>
